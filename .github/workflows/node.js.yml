@@ -25,7 +25,4 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-      env: 
-        process.env.WP_USER: ${{ secrets.WP_USER }} 
-        process.env.WP_PASS: ${{ secrets.WP_PASS }}
-    - run: npm run deploy
+    - run: WP_USER=${{ secrets.WP_USER }} WP_PASS=${{ secrets.WP_PASS }} PROTOCOL=http BASE_URL=dev.brochures.uconn.edu WP_SEND_IMMEDIATELY=false npm run deploy
