@@ -26,6 +26,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
       env: 
-        WP_USER: ${{ secrets.WP_USER }} 
-        WP_PASS: ${{ secrets.WP_PASS }}
+        process.env.WP_USER: ${{ secrets.WP_USER }} 
+        process.env.WP_PASS: ${{ secrets.WP_PASS }}
     - run: npm run deploy
