@@ -1,0 +1,58 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* 
+declare tailwind before _anything_ else in the file
+*/
+
+.uconn-h2 {
+  @apply text-6xl font-extrabold leading-none;
+  color: green;
+}
+
+hr {
+  border-color: black;
+}
+
+.background-cover {
+  margin: 0 -1rem;
+}
+
+.background-random {
+  background-image: url('https://source.unsplash.com/random');
+}
+
+.uconn-button {
+  @apply mt-6 mb-8 border-4 border-uconn-red uppercase;
+  display: inline-block;
+  a {
+    @apply bg-uconn-red font-bold p-4;
+    color: #ffffff;
+    display: block;
+    &:hover,
+    &:focus {
+      @apply text-uconn-red;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.uconn-fact-list {
+  margin-top: 1.5rem;
+  li {
+    font-size: 20px;
+    line-height: 2;
+  }
+}
+
+.wp-block-columns > div:first-of-type {
+  margin-right: 1rem;
+}
+
+.wp-block-group.bg-uconn-blue {
+  margin: 0 -1rem;
+  padding: 1rem
+}
