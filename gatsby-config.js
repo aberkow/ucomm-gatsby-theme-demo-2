@@ -1,6 +1,7 @@
 require('dotenv').config()
 
 module.exports = {
+  pathPrefix: '/ucomm-gatsby-theme-demo',
   plugins: [
     {
       resolve: '@ajberkow/gatsby-theme-ucomm',
