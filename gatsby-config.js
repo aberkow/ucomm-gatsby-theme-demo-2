@@ -15,21 +15,23 @@ module.exports = {
             htaccess_pass: process.env.WP_PASS,
             htaccess_sendImmediately: process.env.WP_SEND_IMMEDIATELY
           },
+          gatsbySourceURL: process.env.GATSBY_SOURCE_URL
         },
-        // set the page slug to query 
-        // this will return only data about pages that match
-        pageSlugFilter: 'excellence',
-        // an optional graphql query string. the default is...
-        // queryFields: `nodes { title slug content }`
-        queryFields: `nodes {
-          author {
-            name
+        wpSourceQuery: `
+          wpSource {
+            page(
+              id: "${process.env.WP_PAGE_DATABASE_ID}", 
+              idType: DATABASE_ID
+            ) {
+              slug
+              title
+              beaverBuilderContent {
+                html
+                css
+              }
+            }
           }
-          path
-          title
-          slug
-          content
-        }`
+        `
       }
     },
   ]
