@@ -8,9 +8,17 @@
 declare tailwind before _anything_ else in the file
 */
 
-.uconn-h2 {
+/* .uconn-h2 {
   @apply text-6xl font-extrabold leading-none;
   color: green;
+} */
+
+html {
+  background-color: #eee;
+}
+
+h3 {
+  font-size: 1.17em;
 }
 
 hr {
@@ -25,17 +33,21 @@ hr {
   background-image: url('https://source.unsplash.com/random');
 }
 
-.uconn-button {
-  @apply mt-6 mb-8 border-4 border-uconn-red uppercase;
-  display: inline-block;
-  a {
-    @apply bg-uconn-red font-bold p-4;
-    color: #ffffff;
-    display: block;
-    &:hover,
-    &:focus {
-      @apply text-uconn-red;
-      background-color: #ffffff;
+.fl-builder-content {
+  .uconn-button {
+    display: inline-block;
+    a.fl-button {
+      @apply rounded-none;
+      color: #ffffff;
+      display: block;
+      &:hover,
+      &:focus {
+        @apply text-uconn-red;
+        background-color: #ffffff;
+      }
+      span {
+        @apply font-bold;
+      }
     }
   }
 }

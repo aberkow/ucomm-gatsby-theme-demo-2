@@ -7,7 +7,7 @@ module.exports = {
         'uconn-red': '#d33a2c'
       }
     },
-    colors: {}
+    // colors: {}
   },
   variants: {},
   plugins: [],

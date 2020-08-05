@@ -25,7 +25,9 @@ module.exports = {
             ) {
               slug
               title
-              beaverBuilderContent {
+              beaverBuilderContent (
+                useGlobalCSS: true
+              ) {
                 html
                 css
               }
