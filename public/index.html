@@ -1,1 +1,691 @@
-<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="note" content="environment=development"/><script src="/socket.io/socket.io.js"></script></head><body><div id="___gatsby"></div><script src="/polyfill.js" nomodule=""></script><script src="/commons.js"></script></body></html>
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/ucomm-gatsby-theme-demo/styles.182429339897b1d25f79.css">/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */*{box-sizing:border-box}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}@keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@keyframes bounce{0%,to{transform:translateY(-25%);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);animation-timing-function:cubic-bezier(0,0,.2,1)}}html{background-color:#eee}</style><meta name="generator" content="Gatsby 2.24.14"/><style data-styled="" data-styled-version="5.1.1">.cnoThz .fl-builder-content *,.cnoThz .fl-builder-content *:before,.cnoThz .fl-builder-content *:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}/*!sc*/
+.cnoThz .fl-row:before,.cnoThz .fl-row:after,.cnoThz .fl-row-content:before,.cnoThz .fl-row-content:after,.cnoThz .fl-col-group:before,.cnoThz .fl-col-group:after,.cnoThz .fl-col:before,.cnoThz .fl-col:after,.cnoThz .fl-module:before,.cnoThz .fl-module:after,.cnoThz .fl-module-content:before,.cnoThz .fl-module-content:after{display:table;content:" ";}/*!sc*/
+.cnoThz .fl-row:after,.cnoThz .fl-row-content:after,.cnoThz .fl-col-group:after,.cnoThz .fl-col:after,.cnoThz .fl-module:after,.cnoThz .fl-module-content:after{clear:both;}/*!sc*/
+.cnoThz .fl-row,.cnoThz .fl-row-content,.cnoThz .fl-col-group,.cnoThz .fl-col,.cnoThz .fl-module,.cnoThz .fl-module-content{zoom:1;}/*!sc*/
+.cnoThz .fl-clear{clear:both;}/*!sc*/
+.cnoThz .fl-clearfix:before,.cnoThz .fl-clearfix:after{display:table;content:" ";}/*!sc*/
+.cnoThz .fl-clearfix:after{clear:both;}/*!sc*/
+.cnoThz .fl-clearfix{zoom:1;}/*!sc*/
+.cnoThz .fl-visible-medium,.cnoThz .fl-visible-medium-mobile,.cnoThz .fl-visible-mobile,.cnoThz .fl-col-group .fl-visible-medium.fl-col,.cnoThz .fl-col-group .fl-visible-medium-mobile.fl-col,.cnoThz .fl-col-group .fl-visible-mobile.fl-col{display:none;}/*!sc*/
+.cnoThz .fl-row,.cnoThz .fl-row-content{margin-left:auto;margin-right:auto;}/*!sc*/
+.cnoThz .fl-row-content-wrap{position:relative;}/*!sc*/
+.cnoThz .fl-builder-mobile .fl-row-bg-photo .fl-row-content-wrap{background-attachment:scroll;}/*!sc*/
+.cnoThz .fl-row-bg-video,.cnoThz .fl-row-bg-video .fl-row-content{position:relative;}/*!sc*/
+.cnoThz .fl-row-bg-video .fl-bg-video{bottom:0;left:0;overflow:hidden;position:absolute;right:0;top:0;}/*!sc*/
+.cnoThz .fl-row-bg-video .fl-bg-video video{bottom:0;left:0px;max-width:none;position:absolute;right:0;top:0px;}/*!sc*/
+.cnoThz .fl-row-bg-video .fl-bg-video iframe{pointer-events:none;width:100vw;height:56.25vw;max-width:none;min-height:100vh;min-width:177.77vh;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);}/*!sc*/
+.cnoThz .fl-bg-video-fallback{background-position:50% 50%;background-repeat:no-repeat;background-size:cover;bottom:0px;left:0px;position:absolute;right:0px;top:0px;}/*!sc*/
+.cnoThz .fl-row-bg-slideshow,.cnoThz .fl-row-bg-slideshow .fl-row-content{position:relative;}/*!sc*/
+.cnoThz .fl-row .fl-bg-slideshow{bottom:0;left:0;overflow:hidden;position:absolute;right:0;top:0;z-index:0;}/*!sc*/
+.cnoThz .fl-builder-edit .fl-row .fl-bg-slideshow *{bottom:0;height:auto !important;left:0;position:absolute !important;right:0;top:0;}/*!sc*/
+.cnoThz .fl-row-bg-overlay .fl-row-content-wrap:after{border-radius:inherit;content:'';display:block;position:absolute;top:0;right:0;bottom:0;left:0;z-index:0;}/*!sc*/
+.cnoThz .fl-row-bg-overlay .fl-row-content{position:relative;z-index:1;}/*!sc*/
+.cnoThz .fl-row-full-height .fl-row-content-wrap,.cnoThz .fl-row-custom-height .fl-row-content-wrap{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;min-height:100vh;}/*!sc*/
+.cnoThz .fl-row-custom-height .fl-row-content-wrap{min-height:0;}/*!sc*/
+.cnoThz .fl-builder-edit .fl-row-full-height .fl-row-content-wrap{min-height:calc( 100vh - 48px );}/*!sc*/
+.cnoThz .fl-row-full-height .fl-row-content,.cnoThz .fl-row-custom-height .fl-row-content{-webkit-box-flex:1 1 auto;-moz-box-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;}/*!sc*/
+.cnoThz .fl-row-full-height .fl-row-full-width.fl-row-content,.cnoThz .fl-row-custom-height .fl-row-full-width.fl-row-content{max-width:100%;width:100%;}/*!sc*/
+.cnoThz .fl-builder-ie-11 .fl-row.fl-row-full-height:not(.fl-visible-medium):not(.fl-visible-medium-mobile):not(.fl-visible-mobile),.cnoThz .fl-builder-ie-11 .fl-row.fl-row-custom-height:not(.fl-visible-medium):not(.fl-visible-medium-mobile):not(.fl-visible-mobile){display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;}/*!sc*/
+.cnoThz .fl-builder-ie-11 .fl-row-full-height .fl-row-content-wrap,.cnoThz .fl-builder-ie-11 .fl-row-custom-height .fl-row-content-wrap{height:auto;}/*!sc*/
+.cnoThz .fl-builder-ie-11 .fl-row-full-height .fl-row-content,.cnoThz .fl-builder-ie-11 .fl-row-custom-height .fl-row-content{-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;margin:0;}/*!sc*/
+.cnoThz .fl-builder-ie-11 .fl-row-full-height.fl-row-align-top .fl-row-content,.cnoThz .fl-builder-ie-11 .fl-row-full-height.fl-row-align-bottom .fl-row-content,.cnoThz .fl-builder-ie-11 .fl-row-custom-height.fl-row-align-top .fl-row-content,.cnoThz .fl-builder-ie-11 .fl-row-custom-height.fl-row-align-bottom .fl-row-content{margin:0 auto;}/*!sc*/
+.cnoThz .fl-builder-ie-11 .fl-row-full-height.fl-row-align-center .fl-col-group:not(.fl-col-group-equal-height),.cnoThz .fl-builder-ie-11 .fl-row-custom-height.fl-row-align-center .fl-col-group:not(.fl-col-group-equal-height){display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-align:center;-ms-flex-pack:center;}/*!sc*/
+.cnoThz .fl-row-full-height.fl-row-align-center .fl-row-content-wrap,.cnoThz .fl-row-custom-height.fl-row-align-center .fl-row-content-wrap{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-align:center;-ms-flex-pack:center;}/*!sc*/
+.cnoThz .fl-row-full-height.fl-row-align-bottom .fl-row-content-wrap,.cnoThz .fl-row-custom-height.fl-row-align-bottom .fl-row-content-wrap{-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-align-items:flex-end;-webkit-justify-content:flex-end;-webkit-box-align:end;-webkit-box-pack:end;-ms-flex-align:end;-ms-flex-pack:end;}/*!sc*/
+.cnoThz .fl-builder-ie-11 .fl-row-full-height.fl-row-align-bottom .fl-row-content-wrap,.cnoThz .fl-builder-ie-11 .fl-row-custom-height.fl-row-align-bottom .fl-row-content-wrap{-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-justify-content:flex-start;}/*!sc*/
+@media all and (device-width:768px) and (device-height:1024px) and (orientation:portrait){.cnoThz .fl-row-full-height .fl-row-content-wrap{min-height:1024px;}}/*!sc*/
+@media all and (device-width:1024px) and (device-height:768px) and (orientation:landscape){.cnoThz .fl-row-full-height .fl-row-content-wrap{min-height:768px;}}/*!sc*/
+@media screen and (device-aspect-ratio:40/71){.cnoThz .fl-row-full-height .fl-row-content-wrap{min-height:500px;}}/*!sc*/
+.cnoThz .fl-col-group-equal-height,.cnoThz .fl-col-group-equal-height .fl-col,.cnoThz .fl-col-group-equal-height .fl-col-content{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+.cnoThz .fl-col-group-equal-height{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}/*!sc*/
+.cnoThz .fl-col-group-equal-height.fl-col-group-has-child-loading{-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;}/*!sc*/
+.cnoThz .fl-col-group-equal-height .fl-col,.cnoThz .fl-col-group-equal-height .fl-col-content{-webkit-box-flex:1 1 auto;-moz-box-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;}/*!sc*/
+.cnoThz .fl-col-group-equal-height .fl-col-content{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-flex-shrink:1;-ms-flex-negative:1;flex-shrink:1;min-width:1px;max-width:100%;width:100%;}/*!sc*/
+.cnoThz .fl-col-group-equal-height:before,.cnoThz .fl-col-group-equal-height .fl-col:before,.cnoThz .fl-col-group-equal-height .fl-col-content:before,.cnoThz .fl-col-group-equal-height:after,.cnoThz .fl-col-group-equal-height .fl-col:after,.cnoThz .fl-col-group-equal-height .fl-col-content:after{content:none;}/*!sc*/
+.cnoThz .fl-col-group-equal-height.fl-col-group-align-center .fl-col-content{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-align:center;-ms-flex-pack:center;}/*!sc*/
+.cnoThz .fl-col-group-equal-height.fl-col-group-align-bottom .fl-col-content{-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-justify-content:flex-end;-webkit-box-align:end;-webkit-box-pack:end;-ms-flex-pack:end;}/*!sc*/
+.cnoThz .fl-col-group-equal-height.fl-col-group-align-center .fl-module,.cnoThz .fl-col-group-equal-height.fl-col-group-align-center .fl-col-group{width:100%;}/*!sc*/
+.cnoThz .fl-builder-ie-11 .fl-col-group-equal-height,.cnoThz .fl-builder-ie-11 .fl-col-group-equal-height .fl-col,.cnoThz .fl-builder-ie-11 .fl-col-group-equal-height .fl-col-content,.cnoThz .fl-builder-ie-11 .fl-col-group-equal-height .fl-module,.cnoThz .fl-col-group-equal-height.fl-col-group-align-center .fl-col-group{min-height:1px;}/*!sc*/
+.cnoThz .fl-col{float:left;min-height:1px;}/*!sc*/
+.cnoThz .fl-col-bg-overlay .fl-col-content{position:relative;}/*!sc*/
+.cnoThz .fl-col-bg-overlay .fl-col-content:after{border-radius:inherit;content:'';display:block;position:absolute;top:0;right:0;bottom:0;left:0;z-index:0;}/*!sc*/
+.cnoThz .fl-col-bg-overlay .fl-module{position:relative;z-index:2;}/*!sc*/
+.cnoThz .fl-module img{max-width:100%;}/*!sc*/
+.cnoThz .fl-builder-module-template{margin:0 auto;max-width:1100px;padding:20px;}/*!sc*/
+.cnoThz .fl-builder-content a.fl-button,.cnoThz .fl-builder-content a.fl-button:visited{border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;display:inline-block;font-size:16px;font-weight:normal;line-height:18px;padding:12px 24px;-webkit-text-decoration:none;text-decoration:none;text-shadow:none;}/*!sc*/
+.cnoThz .fl-builder-content .fl-button:hover{-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+.cnoThz .fl-builder-content .fl-button:active{position:relative;top:1px;}/*!sc*/
+.cnoThz .fl-builder-content .fl-button-width-full .fl-button{display:block;text-align:center;}/*!sc*/
+.cnoThz .fl-builder-content .fl-button-width-custom .fl-button{display:inline-block;text-align:center;max-width:100%;}/*!sc*/
+.cnoThz .fl-builder-content .fl-button-left{text-align:left;}/*!sc*/
+.cnoThz .fl-builder-content .fl-button-center{text-align:center;}/*!sc*/
+.cnoThz .fl-builder-content .fl-button-right{text-align:right;}/*!sc*/
+.cnoThz .fl-builder-content .fl-button i{font-size:1.3em;height:auto;margin-right:8px;vertical-align:middle;width:auto;}/*!sc*/
+.cnoThz .fl-builder-content .fl-button i.fl-button-icon-after{margin-left:8px;margin-right:0;}/*!sc*/
+.cnoThz .fl-builder-content .fl-button-has-icon .fl-button-text{vertical-align:middle;}/*!sc*/
+.cnoThz .fl-icon-wrap{display:inline-block;}/*!sc*/
+.cnoThz .fl-icon{display:table-cell;vertical-align:middle;}/*!sc*/
+.cnoThz .fl-icon a{-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+.cnoThz .fl-icon i{float:left;height:auto;width:auto;}/*!sc*/
+.cnoThz .fl-icon i:before{border:none !important;height:auto;width:auto;}/*!sc*/
+.cnoThz .fl-icon-text{display:table-cell;text-align:left;padding-left:15px;vertical-align:middle;}/*!sc*/
+.cnoThz .fl-icon-text-empty{display:none;}/*!sc*/
+.cnoThz .fl-icon-text *:last-child{margin:0 !important;padding:0 !important;}/*!sc*/
+.cnoThz .fl-icon-text a{-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+.cnoThz .fl-icon-text span{display:block;}/*!sc*/
+.cnoThz .fl-icon-text span.mce-edit-focus{min-width:1px;}/*!sc*/
+.cnoThz .fl-photo{line-height:0;position:relative;}/*!sc*/
+.cnoThz .fl-photo-align-left{text-align:left;}/*!sc*/
+.cnoThz .fl-photo-align-center{text-align:center;}/*!sc*/
+.cnoThz .fl-photo-align-right{text-align:right;}/*!sc*/
+.cnoThz .fl-photo-content{display:inline-block;line-height:0;position:relative;max-width:100%;}/*!sc*/
+.cnoThz .fl-photo-img-svg{width:100%;}/*!sc*/
+.cnoThz .fl-photo-content img{display:inline;height:auto;max-width:100%;}/*!sc*/
+.cnoThz .fl-photo-crop-circle img{-webkit-border-radius:100%;-moz-border-radius:100%;border-radius:100%;}/*!sc*/
+.cnoThz .fl-photo-caption{font-size:13px;line-height:18px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}/*!sc*/
+.cnoThz .fl-photo-caption-below{padding-bottom:20px;padding-top:10px;}/*!sc*/
+.cnoThz .fl-photo-caption-hover{background:rgba(0,0,0,0.7);bottom:0;color:#fff;left:0;opacity:0;-webkit-filter:alpha(opacity = 0);filter:alpha(opacity = 0);padding:10px 15px;position:absolute;right:0;-webkit-transition:opacity 0.3s ease-in;-moz-transition:opacity 0.3s ease-in;-webkit-transition:opacity 0.3s ease-in;transition:opacity 0.3s ease-in;}/*!sc*/
+.cnoThz .fl-photo-content:hover .fl-photo-caption-hover{opacity:100;-webkit-filter:alpha(opacity = 100);filter:alpha(opacity = 100);}/*!sc*/
+.cnoThz .fl-builder-pagination,.cnoThz .fl-builder-pagination-load-more{padding:40px 0;}/*!sc*/
+.cnoThz .fl-builder-pagination ul.page-numbers{list-style:none;margin:0;padding:0;text-align:center;}/*!sc*/
+.cnoThz .fl-builder-pagination li{display:inline-block;list-style:none;margin:0;padding:0;}/*!sc*/
+.cnoThz .fl-builder-pagination li a.page-numbers,.cnoThz .fl-builder-pagination li span.page-numbers{border:1px solid #e6e6e6;display:inline-block;padding:5px 10px;margin:0 0 5px;}/*!sc*/
+.cnoThz .fl-builder-pagination li a.page-numbers:hover,.cnoThz .fl-builder-pagination li span.current{background:#f5f5f5;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+.cnoThz .fl-slideshow,.cnoThz .fl-slideshow *{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}/*!sc*/
+.cnoThz .fl-slideshow .fl-slideshow-image img{max-width:none !important;}/*!sc*/
+.cnoThz .fl-slideshow-social{line-height:0 !important;}/*!sc*/
+.cnoThz .fl-slideshow-social *{margin:0 !important;}/*!sc*/
+.cnoThz .fl-builder-content .bx-wrapper .bx-viewport{background:transparent;border:none;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;left:0;}/*!sc*/
+.cnoThz .mfp-wrap button.mfp-arrow,.cnoThz .mfp-wrap button.mfp-arrow:active,.cnoThz .mfp-wrap button.mfp-arrow:hover,.cnoThz .mfp-wrap button.mfp-arrow:focus{background:transparent !important;border:none !important;outline:none;position:absolute;top:50%;box-shadow:none !important;-moz-box-shadow:none !important;-webkit-box-shadow:none !important;}/*!sc*/
+.cnoThz .mfp-wrap .mfp-close,.cnoThz .mfp-wrap .mfp-close:active,.cnoThz .mfp-wrap .mfp-close:hover,.cnoThz .mfp-wrap .mfp-close:focus{background:transparent !important;border:none !important;outline:none;position:absolute;top:0;box-shadow:none !important;-moz-box-shadow:none !important;-webkit-box-shadow:none !important;}/*!sc*/
+.cnoThz .admin-bar .mfp-wrap .mfp-close,.cnoThz .admin-bar .mfp-wrap .mfp-close:active,.cnoThz .admin-bar .mfp-wrap .mfp-close:hover,.cnoThz .admin-bar .mfp-wrap .mfp-close:focus{top:32px!important;}/*!sc*/
+.cnoThz img.mfp-img{padding:0;}/*!sc*/
+.cnoThz .mfp-counter{display:none;}/*!sc*/
+.cnoThz .mfp-wrap .mfp-preloader.fa{font-size:30px;}/*!sc*/
+.cnoThz .fl-form-field{margin-bottom:15px;}/*!sc*/
+.cnoThz .fl-form-field input.fl-form-error{border-color:#DD6420;}/*!sc*/
+.cnoThz .fl-form-error-message{clear:both;color:#DD6420;display:none;padding-top:8px;font-size:12px;font-weight:lighter;}/*!sc*/
+.cnoThz .fl-form-button-disabled{opacity:0.5;}/*!sc*/
+.cnoThz .fl-animation{opacity:0;}/*!sc*/
+.cnoThz .fl-builder-preview .fl-animation,.cnoThz .fl-builder-edit .fl-animation,.cnoThz .fl-animated{opacity:1;}/*!sc*/
+.cnoThz .fl-animated{-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-fill-mode:both;}/*!sc*/
+.cnoThz .fl-button.fl-button-icon-animation i{width:0 !important;opacity:0;-ms-filter:"alpha(opacity=0)";-webkit-transition:all 0.2s ease-out;transition:all 0.2s ease-out;-webkit-transition:all 0.2s ease-out;}/*!sc*/
+.cnoThz .fl-button.fl-button-icon-animation:hover i{opacity:1! important;-ms-filter:"alpha(opacity=100)";}/*!sc*/
+.cnoThz .fl-button.fl-button-icon-animation i.fl-button-icon-after{margin-left:0px !important;}/*!sc*/
+.cnoThz .fl-button.fl-button-icon-animation:hover i.fl-button-icon-after{margin-left:10px !important;}/*!sc*/
+.cnoThz .fl-button.fl-button-icon-animation i.fl-button-icon-before{margin-right:0 !important;}/*!sc*/
+.cnoThz .fl-button.fl-button-icon-animation:hover i.fl-button-icon-before{margin-right:20px !important;margin-left:-10px;}/*!sc*/
+.cnoThz .single:not(.woocommerce).single-fl-builder-template .fl-content{width:100%;}/*!sc*/
+.cnoThz .fl-builder-layer{position:absolute;top:0;left:0;right:0;bottom:0;z-index:0;pointer-events:none;overflow:hidden;}/*!sc*/
+.cnoThz .fl-builder-shape-layer{z-index:0;}/*!sc*/
+.cnoThz .fl-builder-shape-layer.fl-builder-bottom-edge-layer{z-index:1;}/*!sc*/
+.cnoThz .fl-row-bg-overlay .fl-builder-shape-layer{z-index:1;}/*!sc*/
+.cnoThz .fl-row-bg-overlay .fl-builder-shape-layer.fl-builder-bottom-edge-layer{z-index:2;}/*!sc*/
+.cnoThz .fl-row-has-layers .fl-row-content{z-index:1;}/*!sc*/
+.cnoThz .fl-row-bg-overlay .fl-row-content{z-index:2;}/*!sc*/
+.cnoThz .fl-builder-layer > *{display:block;position:absolute;top:0;left:0;width:100%;}/*!sc*/
+.cnoThz .fl-builder-layer + .fl-row-content{position:relative;}/*!sc*/
+.cnoThz .fl-builder-layer .fl-shape{fill:#aaa;stroke:none;stroke-width:0;width:100%;}/*!sc*/
+.cnoThz .fl-builder-content a.fl-button,.cnoThz .fl-builder-content a.fl-button:visited{background:#fafafa;border:1px solid #ccc;color:#333;}/*!sc*/
+.cnoThz .fl-builder-content a.fl-button *,.cnoThz .fl-builder-content a.fl-button:visited *{color:#333;}/*!sc*/
+.cnoThz .fl-row-content-wrap{margin:0px;}/*!sc*/
+.cnoThz .fl-row-content-wrap{padding:20px;}/*!sc*/
+.cnoThz .fl-row-fixed-width{max-width:1100px;}/*!sc*/
+.cnoThz .fl-module-content{margin:20px;}/*!sc*/
+@media (max-width:992px){.cnoThz .fl-visible-desktop,.cnoThz .fl-visible-mobile,.cnoThz .fl-col-group .fl-visible-desktop.fl-col,.cnoThz .fl-col-group .fl-visible-mobile.fl-col{display:none;}.cnoThz .fl-visible-desktop-medium,.cnoThz .fl-visible-medium,.cnoThz .fl-visible-medium-mobile,.cnoThz .fl-col-group .fl-visible-desktop-medium.fl-col,.cnoThz .fl-col-group .fl-visible-medium.fl-col,.cnoThz .fl-col-group .fl-visible-medium-mobile.fl-col{display:block;}}/*!sc*/
+@media (max-width:768px){.cnoThz .fl-visible-desktop,.cnoThz .fl-visible-desktop-medium,.cnoThz .fl-visible-medium,.cnoThz .fl-col-group .fl-visible-desktop.fl-col,.cnoThz .fl-col-group .fl-visible-desktop-medium.fl-col,.cnoThz .fl-col-group .fl-visible-medium.fl-col{display:none;}.cnoThz .fl-visible-medium-mobile,.cnoThz .fl-visible-mobile,.cnoThz .fl-col-group .fl-visible-medium-mobile.fl-col,.cnoThz .fl-col-group .fl-visible-mobile.fl-col{display:block;}.cnoThz .fl-row-content-wrap{background-attachment:scroll !important;}.cnoThz .fl-row-bg-parallax .fl-row-content-wrap{background-attachment:scroll !important;background-position:center center !important;}.cnoThz .fl-col-group.fl-col-group-equal-height{display:block;}.cnoThz .fl-col-group.fl-col-group-equal-height.fl-col-group-custom-width{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.cnoThz .fl-col-group.fl-col-group-responsive-reversed{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;-ms-box-orient:horizontal;-webkit-flex-flow:row wrap;}.cnoThz .fl-col-group.fl-col-group-responsive-reversed .fl-col{-webkit-box-flex:0 0 100%;-moz-box-flex:0 0 100%;-webkit-flex:0 0 100%;-ms-flex:0 0 100%;-webkit-flex:0 0 100%;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}.cnoThz .fl-col-group-responsive-reversed .fl-col:nth-of-type(1){-webkit-box-ordinal-group:12;-moz-box-ordinal-group:12;-ms-flex-order:12;-webkit-order:12;-webkit-order:12;-ms-flex-order:12;order:12;}.cnoThz .fl-col-group-responsive-reversed .fl-col:nth-of-type(2){-webkit-box-ordinal-group:11;-moz-box-ordinal-group:11;-ms-flex-order:11;-webkit-order:11;-webkit-order:11;-ms-flex-order:11;order:11;}.cnoThz .fl-col-group-responsive-reversed .fl-col:nth-of-type(3){-webkit-box-ordinal-group:10;-moz-box-ordinal-group:10;-ms-flex-order:10;-webkit-order:10;-webkit-order:10;-ms-flex-order:10;order:10;}.cnoThz .fl-col-group-responsive-reversed .fl-col:nth-of-type(4){-webkit-box-ordinal-group:9;-moz-box-ordinal-group:9;-ms-flex-order:9;-webkit-order:9;-webkit-order:9;-ms-flex-order:9;order:9;}.cnoThz .fl-col-group-responsive-reversed .fl-col:nth-of-type(5){-webkit-box-ordinal-group:8;-moz-box-ordinal-group:8;-ms-flex-order:8;-webkit-order:8;-webkit-order:8;-ms-flex-order:8;order:8;}.cnoThz .fl-col-group-responsive-reversed .fl-col:nth-of-type(6){-webkit-box-ordinal-group:7;-moz-box-ordinal-group:7;-ms-flex-order:7;-webkit-order:7;-webkit-order:7;-ms-flex-order:7;order:7;}.cnoThz .fl-col-group-responsive-reversed .fl-col:nth-of-type(7){-webkit-box-ordinal-group:6;-moz-box-ordinal-group:6;-ms-flex-order:6;-webkit-order:6;-webkit-order:6;-ms-flex-order:6;order:6;}.cnoThz .fl-col-group-responsive-reversed .fl-col:nth-of-type(8){-webkit-box-ordinal-group:5;-moz-box-ordinal-group:5;-ms-flex-order:5;-webkit-order:5;-webkit-order:5;-ms-flex-order:5;order:5;}.cnoThz .fl-col-group-responsive-reversed .fl-col:nth-of-type(9){-webkit-box-ordinal-group:4;-moz-box-ordinal-group:4;-ms-flex-order:4;-webkit-order:4;-webkit-order:4;-ms-flex-order:4;order:4;}.cnoThz .fl-col-group-responsive-reversed .fl-col:nth-of-type(10){-webkit-box-ordinal-group:3;-moz-box-ordinal-group:3;-ms-flex-order:3;-webkit-order:3;-webkit-order:3;-ms-flex-order:3;order:3;}.cnoThz .fl-col-group-responsive-reversed .fl-col:nth-of-type(11){-webkit-box-ordinal-group:2;-moz-box-ordinal-group:2;-ms-flex-order:2;-webkit-order:2;-webkit-order:2;-ms-flex-order:2;order:2;}.cnoThz .fl-col-group-responsive-reversed .fl-col:nth-of-type(12){-webkit-box-ordinal-group:1;-moz-box-ordinal-group:1;-ms-flex-order:1;-webkit-order:1;-webkit-order:1;-ms-flex-order:1;order:1;}.cnoThz .fl-col{clear:both;float:none;margin-left:auto;margin-right:auto;width:auto !important;}.cnoThz .fl-col-small{max-width:400px;}.cnoThz .fl-block-col-resize{display:none;}.cnoThz .fl-row[data-node] .fl-row-content-wrap{margin:0;padding-left:0;padding-right:0;}.cnoThz .fl-row[data-node] .fl-bg-video,.cnoThz .fl-row[data-node] .fl-bg-slideshow{left:0;right:0;}.cnoThz .fl-col[data-node] .fl-col-content{margin:0;padding-left:0;padding-right:0;}}/*!sc*/
+.cnoThz .page .fl-post-header,.cnoThz .single-fl-builder-template .fl-post-header{display:none;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2d3 .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2d3 .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2d3 .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2d3 > .fl-row-content-wrap{background-image:url(https://provostsearch.uconn.edu/content/uploads/2019/09/wilbur190924a005-web.jpg);background-repeat:no-repeat;background-position:center center;background-attachment:scroll;background-size:cover;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2d3 > .fl-row-content-wrap{padding-top:350px;padding-bottom:50px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ce{color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f2ce *:not(input):not(textarea):not(select):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(.fl-menu-mobile-toggle){color:inherit;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f2ce a{color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f2ce a:hover{color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f2ce h1,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ce h2,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ce h3,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ce h4,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ce h5,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ce h6,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ce h1 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ce h2 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ce h3 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ce h4 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ce h5 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ce h6 a{color:#ffffff;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ce .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ce .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ce .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ce > .fl-row-content-wrap{background-color:#000e2f;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2d8 .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2d8 .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2d8 .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e4{color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f2e4 *:not(input):not(textarea):not(select):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(.fl-menu-mobile-toggle){color:inherit;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f2e4 a{color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f2e4 a:hover{color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f2e4 h1,.cnoThz .fl-builder-content .fl-node-5d8b98523f2e4 h2,.cnoThz .fl-builder-content .fl-node-5d8b98523f2e4 h3,.cnoThz .fl-builder-content .fl-node-5d8b98523f2e4 h4,.cnoThz .fl-builder-content .fl-node-5d8b98523f2e4 h5,.cnoThz .fl-builder-content .fl-node-5d8b98523f2e4 h6,.cnoThz .fl-builder-content .fl-node-5d8b98523f2e4 h1 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f2e4 h2 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f2e4 h3 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f2e4 h4 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f2e4 h5 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f2e4 h6 a{color:#ffffff;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e4 .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e4 .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e4 .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e4 > .fl-row-content-wrap{background-color:#7c878e;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e4 .fl-row-content{max-width:696px;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e4 > .fl-row-content-wrap{padding-top:40px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e8 .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e8 .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e8 .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e8 > .fl-row-content-wrap{background-color:#7c878e;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e8 .fl-row-content{max-width:958px;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e8 > .fl-row-content-wrap{padding-top:0px;padding-bottom:30px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2eb .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2eb .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2eb .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2eb > .fl-row-content-wrap{background-image:url(https://provostsearch.uconn.edu/content/uploads/2019/09/ccei190618a226-edit.jpg);background-repeat:no-repeat;background-position:center center;background-attachment:scroll;background-size:cover;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2eb > .fl-row-content-wrap{padding-top:500px;padding-right:0px;padding-bottom:50px;padding-left:0px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f1 .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f1 .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f1 .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f1 > .fl-row-content-wrap{padding-top:40px;padding-bottom:0px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f7 .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f7 .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f7 .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f7 .fl-row-content{max-width:842px;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f7 > .fl-row-content-wrap{padding-top:0px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2fb .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2fb .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2fb .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2fb > .fl-row-content-wrap{background-color:#000e2f;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2fb > .fl-row-content-wrap{padding-top:50px;padding-bottom:0px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f300 .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f300 .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f300 .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f300 > .fl-row-content-wrap{background-color:#000e2f;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f300 .fl-row-content{max-width:842px;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f300 > .fl-row-content-wrap{padding-top:0px;padding-bottom:50px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f304 .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f304 .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f304 .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f304 > .fl-row-content-wrap{background-image:url(https://provostsearch.uconn.edu/content/uploads/2019/09/190825_LC_11th_Annual_Learning_Community_Kickoff_134.jpg);background-repeat:no-repeat;background-position:center center;background-attachment:scroll;background-size:cover;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f304 > .fl-row-content-wrap{padding-top:500px;padding-right:0px;padding-bottom:50px;padding-left:0px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f30a .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f30a .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f30a .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f30a > .fl-row-content-wrap{padding-top:40px;padding-bottom:0px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f30f .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f30f .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f30f .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f30f .fl-row-content{max-width:932px;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f313 .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f313 .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f313 .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f313 > .fl-row-content-wrap{background-color:#7c878e;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f313 > .fl-row-content-wrap{padding-top:40px;padding-bottom:0px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f318 .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f318 .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f318 .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f318 > .fl-row-content-wrap{background-color:#7c878e;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f318 .fl-row-content{max-width:842px;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f318 > .fl-row-content-wrap{padding-top:0px;padding-bottom:50px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f320 .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f320 .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f320 .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f320 > .fl-row-content-wrap{background-color:#000e2f;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f320 > .fl-row-content-wrap{padding-bottom:60px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f32a .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f32a .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f32a .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f32a > .fl-row-content-wrap{background-image:url(https://provostsearch.uconn.edu/content/uploads/2019/09/golden190919d121-web.jpg);background-repeat:no-repeat;background-position:center bottom;background-attachment:scroll;background-size:cover;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f32a > .fl-row-content-wrap{padding-top:300px;padding-bottom:300px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f32e .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f32e .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f32e .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f332 .fl-bg-video-audio{display:none;cursor:pointer;position:absolute;bottom:20px;right:20px;z-index:5;width:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f332 .fl-bg-video-audio .fl-audio-control{font-size:20px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f332 .fl-bg-video-audio .fa-times{font-size:10px;vertical-align:middle;position:absolute;top:5px;left:11px;bottom:0;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2d5{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2d2{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2da{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2de{width:33.33%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2df{width:33.33%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e0{width:33.33%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e6{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ea{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ee{color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f2ee *:not(input):not(textarea):not(select):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(.fl-menu-mobile-toggle){color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f2ee a{color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f2ee a:hover{color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f2ee h1,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ee h2,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ee h3,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ee h4,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ee h5,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ee h6,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ee h1 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ee h2 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ee h3 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ee h4 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ee h5 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f2ee h6 a{color:#ffffff;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ee{width:41.35%;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ee > .fl-col-content{background-color:rgba(0,14,47,0.8);}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ee > .fl-col-content{padding-top:15px;padding-right:50px;padding-bottom:5px;padding-left:25px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ef{width:58.65%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f3{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f9{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8bc263ed441{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2fd{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f302{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8bc3e878642{width:50%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8bc3e878646{width:50%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f306{color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f306 *:not(input):not(textarea):not(select):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(.fl-menu-mobile-toggle){color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f306 a{color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f306 a:hover{color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f306 h1,.cnoThz .fl-builder-content .fl-node-5d8b98523f306 h2,.cnoThz .fl-builder-content .fl-node-5d8b98523f306 h3,.cnoThz .fl-builder-content .fl-node-5d8b98523f306 h4,.cnoThz .fl-builder-content .fl-node-5d8b98523f306 h5,.cnoThz .fl-builder-content .fl-node-5d8b98523f306 h6,.cnoThz .fl-builder-content .fl-node-5d8b98523f306 h1 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f306 h2 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f306 h3 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f306 h4 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f306 h5 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f306 h6 a{color:#ffffff;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f306{width:57.33%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f306 > .fl-col-content{padding-top:15px;padding-right:50px;padding-bottom:5px;padding-left:25px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f309{color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f309 *:not(input):not(textarea):not(select):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(.fl-menu-mobile-toggle){color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f309 a{color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f309 a:hover{color:#ffffff;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f309 h1,.cnoThz .fl-builder-content .fl-node-5d8b98523f309 h2,.cnoThz .fl-builder-content .fl-node-5d8b98523f309 h3,.cnoThz .fl-builder-content .fl-node-5d8b98523f309 h4,.cnoThz .fl-builder-content .fl-node-5d8b98523f309 h5,.cnoThz .fl-builder-content .fl-node-5d8b98523f309 h6,.cnoThz .fl-builder-content .fl-node-5d8b98523f309 h1 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f309 h2 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f309 h3 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f309 h4 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f309 h5 a,.cnoThz .fl-builder-content .fl-node-5d8b98523f309 h6 a{color:#ffffff;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f309{width:42.67%;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f309 > .fl-col-content{background-color:rgba(0,14,47,0.8);}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f309 > .fl-col-content{padding-top:15px;padding-right:25px;padding-bottom:5px;padding-left:25px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f30c{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f311{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f315{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f31a{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f322{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f324{width:33.33%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f325{width:33.33%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f326{width:33.33%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f32c{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f330{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f334{width:100%;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-module-heading .fl-heading{padding:0 !important;margin:0 !important;}/*!sc*/
+.cnoThz .fl-row .fl-col .fl-node-5d8b98523f2d6 h1.fl-heading a,.cnoThz .fl-row .fl-col .fl-node-5d8b98523f2d6 h1.fl-heading .fl-heading-text,.cnoThz .fl-row .fl-col .fl-node-5d8b98523f2d6 h1.fl-heading .fl-heading-text *,.cnoThz .fl-node-5d8b98523f2d6 h1.fl-heading .fl-heading-text{color:#ffffff;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2d6.fl-module-heading .fl-heading{font-family:Frank Ruhl Libre,serif;font-weight:300;font-size:70px;text-align:center;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .uc-custom-text blockquote{border-color:transparent;border-left:0;margin:0;padding:0;}/*!sc*/
+.cnoThz #uc-custom-text-container-5d8b98523f2d7{text-align:left;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2d7-0{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;color:#ffffff;font-family:Frank Ruhl Libre;font-weight:300;font-size:32px;line-height:1.4em;}/*!sc*/
+@media screen and (max-width:992px){.cnoThz #custom_text-5d8b98523f2d7-0{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:32px;line-height:1.4em;}}/*!sc*/
+@media screen and (max-width:768px){.cnoThz #custom_text-5d8b98523f2d7-0{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:32px;line-height:1.4em;}}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2d7-0 a{background-color:#;color:#000e2f;-webkit-text-decoration:underline;text-decoration:underline;font-family:Frank Ruhl Libre;font-weight:300;font-size:32px;line-height:1.4em;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2d7-0 a:hover,.cnoThz #custom_text-5d8b98523f2d7-0 a:focus{background-color:#;color:#cccccc;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2db.fl-module-heading .fl-heading{font-family:Roboto,sans-serif;font-weight:500;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;text-align:center;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2db > .fl-module-content{margin-bottom:15px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2dc .fl-separator{border-top:5px solid #7c878e;max-width:100%;margin:auto;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2dc > .fl-module-content{margin-top:0px;}/*!sc*/
+.cnoThz #uc-custom-text-container-5d8b98523f2e1{text-align:center;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e1-0{margin-top:20px;margin-right:00px;margin-bottom:15px;margin-left:00px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;color:#000e2f;font-family:Frank Ruhl Libre;font-weight:400;font-size:65px;line-height:1em;}/*!sc*/
+@media screen and (max-width:992px){.cnoThz #custom_text-5d8b98523f2e1-0{margin-top:20px;margin-right:00px;margin-bottom:15px;margin-left:00px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:65px;line-height:1em;}}/*!sc*/
+@media screen and (max-width:768px){.cnoThz #custom_text-5d8b98523f2e1-0{margin-top:20px;margin-right:00px;margin-bottom:15px;margin-left:00px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:65px;line-height:1em;}}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e1-0 a{background-color:#;color:#cccccc;-webkit-text-decoration:underline;text-decoration:underline;font-family:Frank Ruhl Libre;font-weight:400;font-size:65px;line-height:1em;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e1-0 a:hover,.cnoThz #custom_text-5d8b98523f2e1-0 a:focus{background-color:#;color:#cccccc;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e1-1{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;color:#000e2f;font-family:Roboto;font-weight:500;font-size:20px;line-height:1.4em;}/*!sc*/
+@media screen and (max-width:992px){.cnoThz #custom_text-5d8b98523f2e1-1{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:20px;line-height:1.4em;}}/*!sc*/
+@media screen and (max-width:768px){.cnoThz #custom_text-5d8b98523f2e1-1{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:20px;line-height:1.4em;}}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e1-1 a{background-color:#;color:#cccccc;-webkit-text-decoration:underline;text-decoration:underline;font-family:Roboto;font-weight:500;font-size:20px;line-height:1.4em;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e1-1 a:hover,.cnoThz #custom_text-5d8b98523f2e1-1 a:focus{background-color:#;color:#cccccc;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e1 > .fl-module-content{margin-top:35px;}/*!sc*/
+@media (max-width:768px){.cnoThz .fl-node-5d8b98523f2e1 > .fl-module-content{margin-top:20px;}}/*!sc*/
+.cnoThz #uc-custom-text-container-5d8b98523f2e2{text-align:center;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e2-0{margin-top:20px;margin-right:00px;margin-bottom:15px;margin-left:00px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;color:#000e2f;font-family:Frank Ruhl Libre;font-weight:400;font-size:65px;line-height:1em;}/*!sc*/
+@media screen and (max-width:992px){.cnoThz #custom_text-5d8b98523f2e2-0{margin-top:20px;margin-right:00px;margin-bottom:15px;margin-left:00px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:65px;line-height:1em;}}/*!sc*/
+@media screen and (max-width:768px){.cnoThz #custom_text-5d8b98523f2e2-0{margin-top:20px;margin-right:00px;margin-bottom:15px;margin-left:00px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:65px;line-height:1em;}}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e2-0 a{background-color:#;color:#cccccc;-webkit-text-decoration:underline;text-decoration:underline;font-family:Frank Ruhl Libre;font-weight:400;font-size:65px;line-height:1em;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e2-0 a:hover,.cnoThz #custom_text-5d8b98523f2e2-0 a:focus{background-color:#;color:#cccccc;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e2-1{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;color:#000e2f;font-family:Roboto;font-weight:500;font-size:20px;line-height:1.4em;}/*!sc*/
+@media screen and (max-width:992px){.cnoThz #custom_text-5d8b98523f2e2-1{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:20px;line-height:1.4em;}}/*!sc*/
+@media screen and (max-width:768px){.cnoThz #custom_text-5d8b98523f2e2-1{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:20px;line-height:1.4em;}}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e2-1 a{background-color:#;color:#cccccc;-webkit-text-decoration:underline;text-decoration:underline;font-family:Roboto;font-weight:500;font-size:20px;line-height:1.4em;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e2-1 a:hover,.cnoThz #custom_text-5d8b98523f2e2-1 a:focus{background-color:#;color:#cccccc;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e2 > .fl-module-content{margin-top:35px;}/*!sc*/
+@media (max-width:768px){.cnoThz .fl-node-5d8b98523f2e2 > .fl-module-content{margin-top:20px;}}/*!sc*/
+.cnoThz #uc-custom-text-container-5d8b98523f2e3{text-align:center;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e3-0{margin-top:20px;margin-right:00px;margin-bottom:15px;margin-left:00px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;color:#000e2f;font-family:Frank Ruhl Libre;font-weight:400;font-size:65px;line-height:1em;}/*!sc*/
+@media screen and (max-width:992px){.cnoThz #custom_text-5d8b98523f2e3-0{margin-top:20px;margin-right:00px;margin-bottom:15px;margin-left:00px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:65px;line-height:1em;}}/*!sc*/
+@media screen and (max-width:768px){.cnoThz #custom_text-5d8b98523f2e3-0{margin-top:20px;margin-right:00px;margin-bottom:15px;margin-left:00px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:65px;line-height:1em;}}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e3-0 a{background-color:#;color:#cccccc;-webkit-text-decoration:underline;text-decoration:underline;font-family:Frank Ruhl Libre;font-weight:400;font-size:65px;line-height:1em;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e3-0 a:hover,.cnoThz #custom_text-5d8b98523f2e3-0 a:focus{background-color:#;color:#cccccc;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e3-1{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;color:#000e2f;font-family:Roboto;font-weight:500;font-size:20px;line-height:1.4em;}/*!sc*/
+@media screen and (max-width:992px){.cnoThz #custom_text-5d8b98523f2e3-1{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:20px;line-height:1.4em;}}/*!sc*/
+@media screen and (max-width:768px){.cnoThz #custom_text-5d8b98523f2e3-1{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:20px;line-height:1.4em;}}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e3-1 a{background-color:#;color:#cccccc;-webkit-text-decoration:underline;text-decoration:underline;font-family:Roboto;font-weight:500;font-size:20px;line-height:1.4em;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2e3-1 a:hover,.cnoThz #custom_text-5d8b98523f2e3-1 a:focus{background-color:#;color:#cccccc;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e3 > .fl-module-content{margin-top:35px;}/*!sc*/
+@media (max-width:768px){.cnoThz .fl-node-5d8b98523f2e3 > .fl-module-content{margin-top:20px;}}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8bbfaf7db64 a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8bbfaf7db64 a.fl-button:focus{background:#b61311;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8bbfaf7db64 a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8bbfaf7db64 a.fl-button:focus,.cnoThz .fl-builder-content .fl-node-5d8bbfaf7db64 a.fl-button:hover *,.cnoThz .fl-builder-content .fl-node-5d8bbfaf7db64 a.fl-button:focus *{color:#ffffff;}/*!sc*/
+.cnoThz .fl-node-5d8bbfaf7db64 .fl-button-wrap{text-align:center;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8bbfaf7db64 a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8bbfaf7db64 a.fl-button:focus{border:1px solid #aa0705;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2e7.fl-module-heading .fl-heading{font-family:Frank Ruhl Libre,serif;font-weight:300;font-size:55px;line-height:1;text-align:center;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2fa .fl-rich-text strong{font-weight:bold;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2fa > .fl-module-content{margin-top:0px;}/*!sc*/
+@media (max-width:768px){.cnoThz .fl-module-icon{text-align:center;}}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ec .fl-module-content .fl-icon i,.cnoThz .fl-node-5d8b98523f2ec .fl-module-content .fl-icon i:before{font-size:15px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ec .fl-module-content .fl-icon-text{height:26.25px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ec.fl-module-icon{text-align:left;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ec > .fl-module-content{margin-bottom:0px;}/*!sc*/
+.cnoThz #uc-custom-text-container-5d8b98523f2f0{text-align:left;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2f0-0{margin-top:00px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:00px;padding-right:0px;padding-bottom:0px;padding-left:0px;color:#ffffff;font-family:Roboto;font-weight:300;font-size:15px;line-height:1.7em;}/*!sc*/
+@media screen and (max-width:992px){.cnoThz #custom_text-5d8b98523f2f0-0{margin-top:00px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:00px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:15px;line-height:1.7em;}}/*!sc*/
+@media screen and (max-width:768px){.cnoThz #custom_text-5d8b98523f2f0-0{margin-top:00px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:00px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:15px;line-height:1.7em;}}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2f0-0 a{background-color:#;color:#cccccc;-webkit-text-decoration:underline;text-decoration:underline;font-family:Roboto;font-weight:300;font-size:15px;line-height:1.7em;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f2f0-0 a:hover,.cnoThz #custom_text-5d8b98523f2f0-0 a:focus{background-color:#;color:#;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f0 > .fl-module-content{margin-top:0px;margin-left:50px;}/*!sc*/
+@media (max-width:768px){.cnoThz .fl-node-5d8b98523f2f0 > .fl-module-content{margin-left:20px;}}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f5.fl-module-heading .fl-heading{font-family:Roboto,sans-serif;font-weight:500;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;text-align:center;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f5 > .fl-module-content{margin-bottom:15px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f6 .fl-separator{border-top:5px solid #7c878e;max-width:100%;margin:auto;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f6 > .fl-module-content{margin-top:0px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f4 .fl-rich-text strong{font-weight:bold;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2f4 > .fl-module-content{margin-top:0px;}/*!sc*/
+.cnoThz .fl-node-5d8e4e8413988 .fl-rich-text strong{font-weight:bold;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8e4e8413988 > .fl-module-content{margin-top:0px;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8bc25d71225 a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8bc25d71225 a.fl-button:focus{background:#b61311;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8bc25d71225 a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8bc25d71225 a.fl-button:focus,.cnoThz .fl-builder-content .fl-node-5d8bc25d71225 a.fl-button:hover *,.cnoThz .fl-builder-content .fl-node-5d8bc25d71225 a.fl-button:focus *{color:#ffffff;}/*!sc*/
+.cnoThz .fl-node-5d8bc25d71225 .fl-button-wrap{text-align:center;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8bc25d71225 a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8bc25d71225 a.fl-button:focus{border:1px solid #aa0705;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2fe.fl-module-heading .fl-heading{font-family:Roboto,sans-serif;font-weight:500;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;text-align:center;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2fe > .fl-module-content{margin-bottom:15px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ff .fl-separator{border-top:5px solid #7c878e;max-width:100%;margin:auto;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f2ff > .fl-module-content{margin-top:0px;}/*!sc*/
+.cnoThz .fl-node-5d8bc41291af6 .fl-rich-text strong{font-weight:bold;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8bc406a8400 .fl-rich-text strong{font-weight:bold;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f307 .fl-module-content .fl-icon i,.cnoThz .fl-node-5d8b98523f307 .fl-module-content .fl-icon i:before{font-size:15px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f307 .fl-module-content .fl-icon-text{height:26.25px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f307.fl-module-icon{text-align:left;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f307 > .fl-module-content{margin-bottom:0px;}/*!sc*/
+.cnoThz #uc-custom-text-container-5d8b98523f308{text-align:left;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f308-0{margin-top:00px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:00px;padding-right:0px;padding-bottom:0px;padding-left:0px;color:#ffffff;font-family:Roboto;font-weight:300;font-size:15px;line-height:1.7em;}/*!sc*/
+@media screen and (max-width:992px){.cnoThz #custom_text-5d8b98523f308-0{margin-top:00px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:00px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:15px;line-height:1.7em;}}/*!sc*/
+@media screen and (max-width:768px){.cnoThz #custom_text-5d8b98523f308-0{margin-top:00px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:00px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:15px;line-height:1.7em;}}/*!sc*/
+.cnoThz #custom_text-5d8b98523f308-0 a{background-color:#;color:#cccccc;-webkit-text-decoration:underline;text-decoration:underline;font-family:Roboto;font-weight:300;font-size:15px;line-height:1.7em;}/*!sc*/
+.cnoThz #custom_text-5d8b98523f308-0 a:hover,.cnoThz #custom_text-5d8b98523f308-0 a:focus{background-color:#;color:#;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f308 > .fl-module-content{margin-top:0px;margin-left:50px;}/*!sc*/
+@media (max-width:768px){.cnoThz .fl-node-5d8b98523f308 > .fl-module-content{margin-left:20px;}}/*!sc*/
+.cnoThz .fl-node-5d8b98523f30d.fl-module-heading .fl-heading{font-family:Roboto,sans-serif;font-weight:500;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;text-align:center;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f30d > .fl-module-content{margin-bottom:15px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f30e .fl-separator{border-top:5px solid #7c878e;max-width:100%;margin:auto;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f30e > .fl-module-content{margin-top:0px;}/*!sc*/
+.cnoThz .fl-accordion-button{cursor:pointer;display:table;}/*!sc*/
+.cnoThz .fl-accordion-button:focus{outline:0;}/*!sc*/
+.cnoThz .fl-accordion-button-label{display:table-cell;width:100%;}/*!sc*/
+.cnoThz .fl-accordion-button-icon{display:table-cell;line-height:inherit;opacity:.5;-webkit-filter:alpha(opacity = 50);filter:alpha(opacity = 50);padding-left:15px;vertical-align:middle;}/*!sc*/
+.cnoThz .fl-accordion-button-icon-left{padding-left:0;padding-right:10px;}/*!sc*/
+.cnoThz .fl-accordion-content{display:none;}/*!sc*/
+.cnoThz .fl-accordion-small .fl-accordion-button{padding:10px 15px;}/*!sc*/
+.cnoThz .fl-accordion-small .fl-accordion-content{padding:0 30px 10px 15px;}/*!sc*/
+.cnoThz .fl-accordion-medium .fl-accordion-button{padding:15px 20px;}/*!sc*/
+.cnoThz .fl-accordion-medium .fl-accordion-button-label{font-size:20px;}/*!sc*/
+.cnoThz .fl-accordion-medium .fl-accordion-content{padding:0 40px 15px 20px;}/*!sc*/
+.cnoThz .fl-accordion-large .fl-accordion-button{padding:20px 25px;}/*!sc*/
+.cnoThz .fl-accordion-large .fl-accordion-button-label{font-size:26px;}/*!sc*/
+.cnoThz .fl-accordion-large .fl-accordion-content{padding:0 50px 25px 25px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f312 .fl-accordion-item{margin-bottom:10px;border-style:solid;border-width:0;background-clip:padding-box;border-color:#eeeeee;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-row .fl-col .fl-node-5d8b98523f316 h3.fl-heading a,.cnoThz .fl-row .fl-col .fl-node-5d8b98523f316 h3.fl-heading .fl-heading-text,.cnoThz .fl-row .fl-col .fl-node-5d8b98523f316 h3.fl-heading .fl-heading-text *,.cnoThz .fl-node-5d8b98523f316 h3.fl-heading .fl-heading-text{color:#ffffff;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f316.fl-module-heading .fl-heading{font-family:Roboto,sans-serif;font-weight:500;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;text-align:center;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f316 > .fl-module-content{margin-bottom:15px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f317 .fl-separator{border-top:5px solid #000e2f;max-width:100%;margin:auto;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f317 > .fl-module-content{margin-top:0px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f31b .fl-rich-text strong{font-weight:bold;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f31b > .fl-module-content{margin-top:0px;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f31c a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8b98523f31c a.fl-button:focus{background:#b61311;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f31c a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8b98523f31c a.fl-button:focus,.cnoThz .fl-builder-content .fl-node-5d8b98523f31c a.fl-button:hover *,.cnoThz .fl-builder-content .fl-node-5d8b98523f31c a.fl-button:focus *{color:#ffffff;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f31c .fl-button-wrap{text-align:left;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f31c a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8b98523f31c a.fl-button:focus{border:1px solid #aa0705;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f31c > .fl-module-content{margin-top:0px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f31d .fl-rich-text strong{font-weight:bold;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f31d > .fl-module-content{margin-top:60px;}/*!sc*/
+@media (max-width:768px){.cnoThz .fl-node-5d8b98523f31d > .fl-module-content{margin-top:20px;}}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f31e a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8b98523f31e a.fl-button:focus{background:#b61311;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f31e a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8b98523f31e a.fl-button:focus,.cnoThz .fl-builder-content .fl-node-5d8b98523f31e a.fl-button:hover *,.cnoThz .fl-builder-content .fl-node-5d8b98523f31e a.fl-button:focus *{color:#ffffff;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f31e .fl-button-wrap{text-align:left;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f31e a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8b98523f31e a.fl-button:focus{border:1px solid #aa0705;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f31e > .fl-module-content{margin-top:0px;}/*!sc*/
+.cnoThz .fl-row .fl-col .fl-node-5d8b98523f31f h1.fl-heading a,.cnoThz .fl-row .fl-col .fl-node-5d8b98523f31f h1.fl-heading .fl-heading-text,.cnoThz .fl-row .fl-col .fl-node-5d8b98523f31f h1.fl-heading .fl-heading-text *,.cnoThz .fl-node-5d8b98523f31f h1.fl-heading .fl-heading-text{color:#ffffff;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f31f.fl-module-heading .fl-heading{font-family:Frank Ruhl Libre,serif;font-weight:300;font-size:65px;text-align:center;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f31f > .fl-module-content{margin-bottom:40px;}/*!sc*/
+@media (max-width:768px){.cnoThz .fl-node-5d8b98523f31f > .fl-module-content{margin-bottom:20px;}}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f327 a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8b98523f327 a.fl-button:focus{background:#b61311;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f327 a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8b98523f327 a.fl-button:focus,.cnoThz .fl-builder-content .fl-node-5d8b98523f327 a.fl-button:hover *,.cnoThz .fl-builder-content .fl-node-5d8b98523f327 a.fl-button:focus *{color:#ffffff;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f327 .fl-button-wrap{text-align:left;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f327 a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8b98523f327 a.fl-button:focus{border:1px solid #aa0705;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f329 a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8b98523f329 a.fl-button:focus{background:#b61311;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f329 a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8b98523f329 a.fl-button:focus,.cnoThz .fl-builder-content .fl-node-5d8b98523f329 a.fl-button:hover *,.cnoThz .fl-builder-content .fl-node-5d8b98523f329 a.fl-button:focus *{color:#ffffff;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f329 .fl-button-wrap{text-align:left;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f329 a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8b98523f329 a.fl-button:focus{border:1px solid #aa0705;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f328 a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8b98523f328 a.fl-button:focus{background:#b61311;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f328 a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8b98523f328 a.fl-button:focus,.cnoThz .fl-builder-content .fl-node-5d8b98523f328 a.fl-button:hover *,.cnoThz .fl-builder-content .fl-node-5d8b98523f328 a.fl-button:focus *{color:#ffffff;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f328 .fl-button-wrap{text-align:left;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f328 a.fl-button:hover,.cnoThz .fl-builder-content .fl-node-5d8b98523f328 a.fl-button:focus{border:1px solid #aa0705;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-icon-group .fl-icon{display:inline-block;margin-bottom:10px;margin-top:10px;}/*!sc*/
+.cnoThz .fl-icon-group-left{text-align:left;}/*!sc*/
+.cnoThz .fl-icon-group-center{text-align:center;}/*!sc*/
+.cnoThz .fl-icon-group-right{text-align:right;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f331 .fl-module-content .fl-icon i,.cnoThz .fl-node-5d8b98523f331 .fl-module-content .fl-icon i:before{color:#555555;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f331 .fl-module-content .fl-icon i,.cnoThz .fl-node-5d8b98523f331 .fl-module-content .fl-icon i:before{font-size:45px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f331 .fl-module-content .fl-icon-text{height:78.75px;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f331 .fl-module-content .fl-icon:nth-child(1) i,.cnoThz .fl-node-5d8b98523f331 .fl-module-content .fl-icon:nth-child(1) i:before{color:#555555;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f331 .fl-icon-group-left .fl-icon{margin-right:4px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f331 .fl-icon-group-center .fl-icon{margin-left:4px;margin-right:4px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f331 .fl-icon-group-right .fl-icon{margin-left:4px;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-node-5d8b98523f331 > .fl-module-content{margin-bottom:0px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f336 .fl-rich-text strong{font-weight:bold;}/*!sc*/
+@media(max-width:992px){}/*!sc*/
+@media(max-width:768px){}/*!sc*/
+.cnoThz .fl-menu ul,.cnoThz .fl-menu li{list-style:none;margin:0;padding:0;}/*!sc*/
+.cnoThz .fl-menu .menu:before,.cnoThz .fl-menu .menu:after{content:'';display:table;clear:both;}/*!sc*/
+.cnoThz .fl-menu li{position:relative;}/*!sc*/
+.cnoThz .fl-menu a{display:block;padding:10px;line-height:1;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+.cnoThz .fl-menu a:hover{-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+.cnoThz .fl-menu .sub-menu{min-width:220px;}/*!sc*/
+.cnoThz .fl-module[data-node] .fl-menu .fl-menu-expanded .sub-menu{background-color:transparent;-webkit-box-shadow:none;-ms-box-shadow:none;box-shadow:none;}/*!sc*/
+.cnoThz .fl-menu .fl-has-submenu:focus,.cnoThz .fl-menu .fl-has-submenu .sub-menu:focus,.cnoThz .fl-menu .fl-has-submenu-container:focus{outline:0;}/*!sc*/
+.cnoThz .fl-menu .fl-has-submenu-container{position:relative;}/*!sc*/
+.cnoThz .fl-menu .fl-has-submenu-container a{padding-right:38px;}/*!sc*/
+.cnoThz .fl-menu .fl-menu-accordion .fl-has-submenu > .sub-menu{display:none;}/*!sc*/
+.cnoThz .fl-menu .fl-menu-accordion .fl-has-submenu.fl-active .hide-heading > .sub-menu{box-shadow:none;display:block !important;}/*!sc*/
+.cnoThz .fl-menu .fl-menu-toggle{position:absolute;top:50%;right:0;cursor:pointer;}/*!sc*/
+.cnoThz .fl-menu .fl-toggle-arrows .fl-menu-toggle:before,.cnoThz .fl-menu .fl-toggle-none .fl-menu-toggle:before{border-color:#333;}/*!sc*/
+.cnoThz .fl-menu .fl-menu-expanded .fl-menu-toggle{display:none;}/*!sc*/
+.cnoThz .fl-menu .fl-menu-mobile-toggle{position:relative;padding:8px;background-color:transparent;border:none;color:#333;border-radius:0;}/*!sc*/
+.cnoThz .fl-menu .fl-menu-mobile-toggle.text{width:100%;text-align:center;}/*!sc*/
+.cnoThz .fl-menu .fl-menu-mobile-toggle.hamburger .fl-menu-mobile-toggle-label,.cnoThz .fl-menu .fl-menu-mobile-toggle.hamburger-label .fl-menu-mobile-toggle-label{display:inline-block;margin-left:10px;vertical-align:middle;}/*!sc*/
+.cnoThz .fl-menu .fl-menu-mobile-toggle.hamburger .svg-container,.cnoThz .fl-menu .fl-menu-mobile-toggle.hamburger-label .svg-container{display:inline-block;position:relative;width:1.4em;height:1.4em;vertical-align:middle;}/*!sc*/
+.cnoThz .fl-menu .fl-menu-mobile-toggle.hamburger .hamburger-menu,.cnoThz .fl-menu .fl-menu-mobile-toggle.hamburger-label .hamburger-menu{position:absolute;top:0;left:0;right:0;bottom:0;}/*!sc*/
+.cnoThz .fl-menu .fl-menu-mobile-toggle.hamburger .hamburger-menu rect,.cnoThz .fl-menu .fl-menu-mobile-toggle.hamburger-label .hamburger-menu rect{fill:currentColor;}/*!sc*/
+.cnoThz li.mega-menu .hide-heading > a,.cnoThz li.mega-menu .hide-heading > .fl-has-submenu-container,.cnoThz li.mega-menu-disabled .hide-heading > a,.cnoThz li.mega-menu-disabled .hide-heading > .fl-has-submenu-container{display:none;}/*!sc*/
+.cnoThz ul.fl-menu-horizontal li.mega-menu{position:static;}/*!sc*/
+.cnoThz ul.fl-menu-horizontal li.mega-menu > ul.sub-menu{top:inherit !important;left:0 !important;right:0 !important;width:100%;}/*!sc*/
+.cnoThz ul.fl-menu-horizontal li.mega-menu.fl-has-submenu:hover > ul.sub-menu,.cnoThz ul.fl-menu-horizontal li.mega-menu.fl-has-submenu.focus > ul.sub-menu{display:-webkit-box !important;display:-webkit-flex !important;display:-ms-flexbox !important;display:flex !important;}/*!sc*/
+.cnoThz ul.fl-menu-horizontal li.mega-menu > ul.sub-menu li{border-color:transparent;}/*!sc*/
+.cnoThz ul.fl-menu-horizontal li.mega-menu > ul.sub-menu > li{width:100%;}/*!sc*/
+.cnoThz ul.fl-menu-horizontal li.mega-menu > ul.sub-menu > li > .fl-has-submenu-container a{font-weight:bold;}/*!sc*/
+.cnoThz ul.fl-menu-horizontal li.mega-menu > ul.sub-menu > li > .fl-has-submenu-container a:hover{background:transparent;}/*!sc*/
+.cnoThz ul.fl-menu-horizontal li.mega-menu > ul.sub-menu .fl-menu-toggle{display:none;}/*!sc*/
+.cnoThz ul.fl-menu-horizontal li.mega-menu > ul.sub-menu ul.sub-menu{background:transparent;-webkit-box-shadow:none;-ms-box-shadow:none;box-shadow:none;display:block;min-width:0;opacity:1;padding:0;position:static;visibility:visible;}/*!sc*/
+.cnoThz .fl-menu-mobile-clone{clear:both;}/*!sc*/
+.cnoThz .fl-menu-mobile-clone .fl-menu .menu{float:none !important;}/*!sc*/
+.cnoThz .fl-menu-mobile-close{display:none;}/*!sc*/
+.cnoThz .fl-menu-mobile-close,.cnoThz .fl-menu-mobile-close:hover,.cnoThz .fl-menu-mobile-close:focus{background:none;border:0 none;color:inherit;font-size:18px;padding:10px 6px 10px 14px;}/*!sc*/
+.cnoThz .fl-builder-ie-11 .fl-module-menu .fl-menu-horizontal .fl-has-submenu:hover > .sub-menu{z-index:60;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f335 .menu a{padding-left:14px;padding-right:14px;padding-top:10px;padding-bottom:10px;}/*!sc*/
+.cnoThz .fl-builder-content .fl-node-5d8b98523f335 .menu > li > a,.cnoThz .fl-builder-content .fl-node-5d8b98523f335 .menu > li > .fl-has-submenu-container > a,.cnoThz .fl-builder-content .fl-node-5d8b98523f335 .sub-menu > li > a,.cnoThz .fl-builder-content .fl-node-5d8b98523f335 .sub-menu > li > .fl-has-submenu-container > a{color:#000e2f;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f335 .fl-menu .fl-toggle-arrows .fl-menu-toggle:before,.cnoThz .fl-node-5d8b98523f335 .fl-menu .fl-toggle-none .fl-menu-toggle:before{border-color:#000e2f;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f335 .menu .fl-has-submenu .sub-menu{display:none;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f335 .fl-menu .sub-menu{background-color:#ffffff;-webkit-box-shadow:0 1px 20px rgba(0,0,0,0.1);-ms-box-shadow:0 1px 20px rgba(0,0,0,0.1);box-shadow:0 1px 20px rgba(0,0,0,0.1);}/*!sc*/
+.cnoThz .fl-node-5d8b98523f335 .fl-menu-horizontal.fl-toggle-arrows .fl-has-submenu-container a{padding-right:28px;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f335 .fl-menu-horizontal.fl-toggle-arrows .fl-menu-toggle,.cnoThz .fl-node-5d8b98523f335 .fl-menu-horizontal.fl-toggle-none .fl-menu-toggle{width:28px;height:28px;margin:-14px 0 0;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f335 .fl-menu-horizontal.fl-toggle-arrows .fl-menu-toggle,.cnoThz .fl-node-5d8b98523f335 .fl-menu-horizontal.fl-toggle-none .fl-menu-toggle,.cnoThz .fl-node-5d8b98523f335 .fl-menu-vertical.fl-toggle-arrows .fl-menu-toggle,.cnoThz .fl-node-5d8b98523f335 .fl-menu-vertical.fl-toggle-none .fl-menu-toggle{width:28px;height:28px;margin:-14px 0 0;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f335 .fl-menu li{border-top:1px solid transparent;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f335 .fl-menu li:first-child{border-top:none;}/*!sc*/
+@media ( max-width:768px ){.cnoThz .fl-menu-horizontal{text-align:left;}.cnoThz .fl-node-5d8b98523f335 .fl-menu .sub-menu{background-color:transparent;-webkit-box-shadow:none;-ms-box-shadow:none;box-shadow:none;}.cnoThz .fl-node-5d8b98523f335 .mega-menu.fl-active .hide-heading > .sub-menu,.cnoThz .fl-node-5d8b98523f335 .mega-menu-disabled.fl-active .hide-heading > .sub-menu{display:block !important;}}/*!sc*/
+@media ( min-width:769px ){.cnoThz .fl-node-5d8b98523f335 .fl-menu .menu > li{display:inline-block;}.cnoThz .fl-node-5d8b98523f335 .menu li{border-left:1px solid transparent;border-top:none;}.cnoThz .fl-node-5d8b98523f335 .menu li:first-child{border:none;}.cnoThz .fl-node-5d8b98523f335 .menu li li{border-top:1px solid transparent;border-left:none;}.cnoThz .fl-node-5d8b98523f335 .menu .fl-has-submenu .sub-menu{position:absolute;top:100%;left:0;z-index:10;visibility:hidden;opacity:0;text-align:left;}.cnoThz .fl-node-5d8b98523f335 .fl-has-submenu .fl-has-submenu .sub-menu{top:0;left:100%;}.cnoThz .fl-node-5d8b98523f335 .fl-menu .fl-has-submenu:hover > .sub-menu,.cnoThz .fl-node-5d8b98523f335 .fl-menu .fl-has-submenu.focus > .sub-menu{display:block;visibility:visible;opacity:1;}.cnoThz .fl-node-5d8b98523f335 .menu .fl-has-submenu.fl-menu-submenu-right .sub-menu{left:inherit;right:0;}.cnoThz .fl-node-5d8b98523f335 .menu .fl-has-submenu .fl-has-submenu.fl-menu-submenu-right .sub-menu{top:0;left:inherit;right:100%;}.cnoThz .fl-node-5d8b98523f335 .fl-menu .fl-has-submenu.fl-active > .fl-has-submenu-container .fl-menu-toggle{-webkit-transform:none;-ms-transform:none;-webkit-transform:none;-ms-transform:none;transform:none;}.cnoThz .fl-node-5d8b98523f335 .fl-menu .fl-menu-toggle{display:none;}.cnoThz .fl-node-5d8b98523f335 ul.sub-menu{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}}/*!sc*/
+.cnoThz .fl-node-5d8b98523f335 ul.fl-menu-horizontal li.mega-menu > ul.sub-menu > li > .fl-has-submenu-container a:hover{color:#000e2f;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f335 .fl-menu .menu,.cnoThz .fl-node-5d8b98523f335 .fl-menu .menu > li{font-family:Roboto,sans-serif;font-weight:400;font-size:14px;text-transform:none;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f335 .fl-menu{text-align:center;}/*!sc*/
+.cnoThz .fl-node-5d8b98523f335 .fl-menu .menu{float:none;display:inline-block;vertical-align:top;}/*!sc*/
+@media(max-width:992px){.cnoThz .fl-node-5d8b98523f335 .fl-menu .menu{float:none;display:inline-block;vertical-align:top;}}/*!sc*/
+@media(max-width:768px){.cnoThz .fl-node-5d8b98523f335 .fl-menu .menu{float:none;display:inline-block;vertical-align:top;}}/*!sc*/
+data-styled.g1[id="layout___StyledCSS-by3nac-0"]{content:"cnoThz,"}/*!sc*/
+</style><link as="script" rel="preload" href="/ucomm-gatsby-theme-demo/webpack-runtime-1fe388d268fa1d30aedf.js"/><link as="script" rel="preload" href="/ucomm-gatsby-theme-demo/framework-c5c887c038a86482cf43.js"/><link as="script" rel="preload" href="/ucomm-gatsby-theme-demo/styles-53aa9d4f42ead6242a9b.js"/><link as="script" rel="preload" href="/ucomm-gatsby-theme-demo/app-b7aba8d35c1ba479a70e.js"/><link as="script" rel="preload" href="/ucomm-gatsby-theme-demo/component---node-modules-ajberkow-gatsby-theme-ucomm-src-components-layout-js-294d8b2a0bdddfca1446.js"/><link as="fetch" rel="preload" href="/ucomm-gatsby-theme-demo/page-data/index/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/ucomm-gatsby-theme-demo/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div><main><div class="fl-builder-content fl-builder-content-50 fl-builder-global-templates-locked" data-post-id="50"><div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5d8b98523f2d3" data-node="5d8b98523f2d3"><div class="fl-row-content-wrap"><div class="fl-row-content fl-row-fixed-width fl-node-content"><div class="fl-col-group fl-node-5d8b98523f2d4" data-node="5d8b98523f2d4"><div class="fl-col fl-node-5d8b98523f2d5" data-node="5d8b98523f2d5"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-heading fl-node-5d8b98523f2d6" data-node="5d8b98523f2d6"><div class="fl-module-content fl-node-content"><h1 class="fl-heading"><span class="fl-heading-text">Provost Search</span></h1></div></div></div></div></div></div></div></div><div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5d8b98523f2ce" data-node="5d8b98523f2ce"><div class="fl-row-content-wrap"><div class="fl-row-content fl-row-fixed-width fl-node-content"><div class="fl-col-group fl-node-5d8b98523f2d1" data-node="5d8b98523f2d1"><div class="fl-col fl-node-5d8b98523f2d2" data-node="5d8b98523f2d2"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-custom-text fl-node-5d8b98523f2d7" data-node="5d8b98523f2d7"><div class="fl-module-content fl-node-content"><div id='uc-custom-text-container-5d8b98523f2d7' class='uc-custom-text'>  <p id="custom_text-5d8b98523f2d7-0" class="custom-text">  The University of Connecticut is one of the top public research universities in the nation, and with an unprecedented commitment from the state of Connecticut ensures UConn attracts internationally renowned faculty and the world’s brightest students. As a vibrant, progressive leader, UConn fosters a diverse and dynamic culture that meets the challenges of a changing global society.</p></div></div></div></div></div></div></div></div></div><div class="fl-row fl-row-full-width fl-row-bg-none fl-node-5d8b98523f2d8" data-node="5d8b98523f2d8"><div class="fl-row-content-wrap"><div class="fl-row-content fl-row-fixed-width fl-node-content"><div class="fl-col-group fl-node-5d8b98523f2d9" data-node="5d8b98523f2d9"><div class="fl-col fl-node-5d8b98523f2da fl-col-has-cols" data-node="5d8b98523f2da"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-heading fl-node-5d8b98523f2db uppercase" data-node="5d8b98523f2db"><div class="fl-module-content fl-node-content"><h3 class="fl-heading"><span class="fl-heading-text">About UConn</span></h3></div></div><div class="fl-module fl-module-separator fl-node-5d8b98523f2dc" data-node="5d8b98523f2dc"><div class="fl-module-content fl-node-content"><div class="fl-separator"></div></div></div><div class="fl-col-group fl-node-5d8b98523f2dd fl-col-group-nested" data-node="5d8b98523f2dd"><div class="fl-col fl-node-5d8b98523f2de fl-col-small" data-node="5d8b98523f2de"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-custom-text fl-node-5d8b98523f2e1" data-node="5d8b98523f2e1"><div class="fl-module-content fl-node-content"><div id='uc-custom-text-container-5d8b98523f2e1' class='uc-custom-text'>  <p id="custom_text-5d8b98523f2e1-0" class="custom-text">  32,000+</p><p id="custom_text-5d8b98523f2e1-1" class="custom-text">  students</p></div></div></div></div></div><div class="fl-col fl-node-5d8b98523f2df fl-col-small" data-node="5d8b98523f2df"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-custom-text fl-node-5d8b98523f2e2" data-node="5d8b98523f2e2"><div class="fl-module-content fl-node-content"><div id='uc-custom-text-container-5d8b98523f2e2' class='uc-custom-text'>  <p id="custom_text-5d8b98523f2e2-0" class="custom-text">  255,000</p><p id="custom_text-5d8b98523f2e2-1" class="custom-text">  alumni</p></div></div></div></div></div><div class="fl-col fl-node-5d8b98523f2e0 fl-col-small" data-node="5d8b98523f2e0"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-custom-text fl-node-5d8b98523f2e3" data-node="5d8b98523f2e3"><div class="fl-module-content fl-node-content"><div id='uc-custom-text-container-5d8b98523f2e3' class='uc-custom-text'>  <p id="custom_text-5d8b98523f2e3-0" class="custom-text">  14</p><p id="custom_text-5d8b98523f2e3-1" class="custom-text">  schools and colleges</p></div></div></div></div></div></div><div class="fl-module fl-module-button fl-node-5d8bbfaf7db64 uppercase uconn-button" data-node="5d8bbfaf7db64"><div class="fl-module-content fl-node-content"><div class="fl-button-wrap fl-button-width-auto fl-button-center"><a href="https://excellence.uconn.edu/" target="_self" class="fl-button" role="button"><span class="fl-button-text">Learn More</span></a></div></div></div></div></div></div></div></div></div><div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5d8b98523f2eb" data-node="5d8b98523f2eb"><div class="fl-row-content-wrap"><div class="fl-row-content fl-row-full-width fl-node-content"><div class="fl-col-group fl-node-5d8b98523f2ed" data-node="5d8b98523f2ed"><div class="fl-col fl-node-5d8b98523f2ee fl-col-small" data-node="5d8b98523f2ee"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-icon fl-node-5d8b98523f2ec" data-node="5d8b98523f2ec"><div class="fl-module-content fl-node-content"><div class="fl-icon-wrap"><span class="fl-icon"><i class="fas fa-chevron-circle-right" aria-hidden="true"></i></span><div id="fl-icon-text-5d8b98523f2ec" class="fl-icon-text fl-icon-text-wrap"><p><span class="uppercase">Connecticut Center for Entrepreneurship and Innovation</span></p></div></div></div></div><div class="fl-module fl-module-custom-text fl-node-5d8b98523f2f0" data-node="5d8b98523f2f0"><div class="fl-module-content fl-node-content"><div id='uc-custom-text-container-5d8b98523f2f0' class='uc-custom-text'>  <p id="custom_text-5d8b98523f2f0-0" class="custom-text">  As one of the nation’s top 25 public universities, UConn is actively engaged in promoting entrepreneurship and commercial ventures as part of its mission. Here to drive the future of innovation, enterprising students, faculty, and businesses alike can tap into a variety of resources to help their ideas come to fruition.</p></div></div></div></div></div><div class="fl-col fl-node-5d8b98523f2ef" data-node="5d8b98523f2ef"><div class="fl-col-content fl-node-content"></div></div></div></div></div></div><div class="fl-row fl-row-full-width fl-row-bg-none fl-node-5d8b98523f2f1" data-node="5d8b98523f2f1"><div class="fl-row-content-wrap"><div class="fl-row-content fl-row-fixed-width fl-node-content"><div class="fl-col-group fl-node-5d8b98523f2f2" data-node="5d8b98523f2f2"><div class="fl-col fl-node-5d8b98523f2f3" data-node="5d8b98523f2f3"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-heading fl-node-5d8b98523f2f5 uppercase" data-node="5d8b98523f2f5"><div class="fl-module-content fl-node-content"><h3 class="fl-heading"><span class="fl-heading-text">Professional and Personal Qualifications</span></h3></div></div><div class="fl-module fl-module-separator fl-node-5d8b98523f2f6" data-node="5d8b98523f2f6"><div class="fl-module-content fl-node-content"><div class="fl-separator"></div></div></div></div></div></div></div></div></div><div class="fl-row fl-row-full-width fl-row-bg-none fl-node-5d8b98523f2f7" data-node="5d8b98523f2f7"><div class="fl-row-content-wrap"><div class="fl-row-content fl-row-fixed-width fl-node-content"><div class="fl-col-group fl-node-5d8b98523f2f8" data-node="5d8b98523f2f8"><div class="fl-col fl-node-5d8b98523f2f9" data-node="5d8b98523f2f9"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-5d8b98523f2f4" data-node="5d8b98523f2f4"><div class="fl-module-content fl-node-content"><div class="fl-rich-text"><p>UConn seeks a Provost with a bold vision and high energy and a commitment to excellence and innovation in academe. The successful candidate must have a record of outstanding scholarship, which would allow the candidate to have both full professor rank and tenure in one of UConn's academic departments. A Ph.D. or its equivalent is required.</p><p>Specific desired qualifications and experience include the following:</p><ul><li>A record of achievement as a transformative leader.</li><li>A strong administrative record at a relevant institution that demonstrates strong collaborative academic management experience, sound judgment, and excellent analytical skills.</li><li>Exceptional management skills that promote effective leadership of a complex organization and relevant budgetary experience.</li><li>The ability to passionately and inclusively articulate UConn’s broad-based goals to a variety of audiences. Outstanding listening and interpersonal skills, and an ability to inspire, energize, and engage faculty, staff, and students.</li><li>A strong understanding of the needs of a comprehensive research university and ability to advocate for the public service mission as defined by a land and sea grant institution.</li><li>A track record of increasing diversity and inclusive practices.</li></ul></div></div></div><div class="fl-module fl-module-rich-text fl-node-5d8e4e8413988" data-node="5d8e4e8413988"><div class="fl-module-content fl-node-content"><div class="fl-rich-text"><p class="uppercase"><strong>Leadership Capabilities:</strong></p><p><strong>Visionary Leadership: </strong>A vision for higher education that is responsive to the mandate to train the next generation of ethical global leaders.</p><p><strong>Innovative Approach:</strong> A strong sense of entrepreneurship, innovation, and vision that will help guide the University in determining creative areas of focus for its academic plan. This person should also bring insightful perspective on new advances in pedagogy and student learning.</p><p><strong>Collaborative Leadership Skills: </strong>A record of transparent decision-making that fosters shared governance. Commitment to the importance of consultation and integrity in the handling of all academic matters is also important as well as the ability to effectively partner with a talented group of deans and other campus leaders.</p><p><strong>Commitment to Diversity:</strong> Evident commitment to implementing successful programs to promote inclusion and increase diversity among faculty, staff, and students.</p><p><strong>Effective Decision-Making Abilities:</strong> The ability and courage to make difficult but informed decisions and set priorities.</p></div></div></div></div></div></div><div class="fl-col-group fl-node-5d8bc263ed33f" data-node="5d8bc263ed33f"><div class="fl-col fl-node-5d8bc263ed441" data-node="5d8bc263ed441"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-5d8bc25d71225 uppercase uconn-button" data-node="5d8bc25d71225"><div class="fl-module-content fl-node-content"><div class="fl-button-wrap fl-button-width-auto fl-button-center"><a href="/content/uploads/2019/10/UConn-Provost-Position-Specification-FINAL.pdf" target="_self" class="fl-button" role="button"><span class="fl-button-text">Full Scope of Position</span></a></div></div></div></div></div></div></div></div></div><div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5d8b98523f2fb text-white" data-node="5d8b98523f2fb"><div class="fl-row-content-wrap"><div class="fl-row-content fl-row-fixed-width fl-node-content"><div class="fl-col-group fl-node-5d8b98523f2fc" data-node="5d8b98523f2fc"><div class="fl-col fl-node-5d8b98523f2fd" data-node="5d8b98523f2fd"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-heading fl-node-5d8b98523f2fe uppercase color-uconn-white" data-node="5d8b98523f2fe"><div class="fl-module-content fl-node-content"><h3 class="fl-heading"><span class="fl-heading-text">Search Committee</span></h3></div></div><div class="fl-module fl-module-separator fl-node-5d8b98523f2ff" data-node="5d8b98523f2ff"><div class="fl-module-content fl-node-content"><div class="fl-separator"></div></div></div></div></div></div></div></div></div><div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5d8b98523f300 text-white" data-node="5d8b98523f300"><div class="fl-row-content-wrap"><div class="fl-row-content fl-row-fixed-width fl-node-content"><div class="fl-col-group fl-node-5d8b98523f301" data-node="5d8b98523f301"><div class="fl-col fl-node-5d8b98523f302 fl-col-has-cols" data-node="5d8b98523f302"><div class="fl-col-content fl-node-content"><div class="fl-col-group fl-node-5d8bc3e87853e fl-col-group-nested" data-node="5d8bc3e87853e"><div class="fl-col fl-node-5d8bc3e878642 fl-col-small" data-node="5d8bc3e878642"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-5d8bc41291af6" data-node="5d8bc41291af6"><div class="fl-module-content fl-node-content"><div class="fl-rich-text"><p class="margin-0"><strong>Sandy Chafouleas </strong>(Chair)</p><p class="margin-bottom-1-8em-only">Neag School of Education<br /><em>Board of Trustees Distinguished Professor, Department of Educational Psychology; Co‐Director, UConn Collaborator on School and Child Health (CSCH)</em></p><p class="margin-0"><strong>Jason Vokoun</strong></p><p class="margin-bottom-1-8em-only">College of Agriculture, Health &amp; Natural Resources<br /><em>Professor &amp; Department HeadDepartment of Natural Resources &amp; the Environment</em></p><p class="margin-0"><strong>Cuihong Li</strong></p><p class="margin-bottom-1-8em-only">School of Business<br /><em>Associate Professor of Operations and Information Management at the School of Business</em></p><p class="margin-0"><strong>Pamir Alpay</strong></p><p class="margin-bottom-1-8em-only">School of Engineering<br /><em>Associate Dean for Research and Industrial Partnerships / GE Professor in Advanced Manufacturing; Executive Director, UConn IPB/Tech Park</em></p><p class="margin-0"><strong>Michael Bradford</strong></p><p class="margin-bottom-1-8em-only">School of Fine Arts<br /><em>Head of Dramatic Arts/Artistic Director, Connecticut Repertory Theatre</em></p><p class="margin-0"><strong>Willajeanne McLean</strong></p><p class="margin-bottom-1-8em-only">UConn Law School<br /><em>Distinguished Professor of Law</em></p><p class="margin-0"><strong>Marie Coppola</strong></p><p class="margin-bottom-1-8em-only">College of Liberal Arts and Sciences<br /><em>Associate Professor, Psychology (CLAS)</em></p><p class="margin-0"><strong>Cheryl Beck</strong></p><p class="margin-bottom-1-8em-only">School of Nursing<br /><em>Joint Appointment in School of Medicine Department of Obstetrics &amp; Gynecology</em></p><p class="margin-0"><strong>Robin Bogner</strong></p><p class="margin-bottom-1-8em-only">School of Pharmacy<br /><em>Professor of Pharmaceutics, Department of Pharmaceutical Sciences</em></p><p class="margin-0"><strong>Kathryn Libal</strong></p><p class="margin-bottom-1-8em-only">School of Social Work<br /><em>Associate Professor and Director, UConn Human Rights Institute</em></p></div></div></div></div></div><div class="fl-col fl-node-5d8bc3e878646 fl-col-small" data-node="5d8bc3e878646"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-5d8bc406a8400" data-node="5d8bc406a8400"><div class="fl-module-content fl-node-content"><div class="fl-rich-text"><p class="margin-0"><strong>Rajesh Lalla</strong></p><p class="margin-bottom-1-8em-only">School of Dental Medicine<br /><em>Professor, Associate Dean for Research; School of Dental Medicine</em></p><p class="margin-0"><strong>Howard Tennen</strong></p><p class="margin-bottom-1-8em-only">School of Medicine<br /><em>Professor of Community Medicine and Health Care</em></p><p class="margin-0"><strong>Anne D’Alleva</strong></p><p class="margin-bottom-1-8em-only">School of Fine Arts<br /><em>Dean, School of Fine Arts</em></p><p class="margin-0"><strong>Jeremy Teitelbaum<br /></strong>College of Liberal Arts and Sciences<br /><em>Professor of Mathematics; former CLAS dean and former interim Provost</em></p><p class="margin-0"><strong><br />Maria Martinez</strong></p><p class="margin-bottom-1-8em-only"><em>Assistant Vice Provost Institute for Student Success</em></p><p class="margin-0"><strong>Scott Jordan</strong></p><p class="margin-bottom-1-8em-only"><em>Executive Vice President for Administration &amp; Chief Financial Officer</em></p><p class="margin-0"><strong>Nathan Fuerst</strong></p><p class="margin-bottom-1-8em-only"><em>Vice President for Enrollment Planning and Management</em></p><p class="margin-0"><strong>Stephany Santos</strong></p><p class="margin-bottom-1-8em-only">Graduate Student<br /><em>Current PhD student, graduated with a B.S in Biomedical Engineering from UConn</em></p><p class="margin-0"><strong>Walter Dodson</strong></p><p class="margin-bottom-1-8em-only">Undergraduate Student<br /><em>Chief of Staff to the President –Undergraduate Student Government</em></p><p class="margin-0"><strong>Michael Kirk</strong></p><p class="margin-bottom-1-8em-only"><em>Assistant Vice President for University Relations / Senior Advisor to the President</em></p><p class="margin-0"><strong>Jen Burckardt</strong></p><p class="margin-bottom-1-8em-only"><em>Staff Assistant</em></p></div></div></div></div></div></div></div></div></div></div></div></div><div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5d8b98523f304" data-node="5d8b98523f304"><div class="fl-row-content-wrap"><div class="fl-row-content fl-row-full-width fl-node-content"><div class="fl-col-group fl-node-5d8b98523f305" data-node="5d8b98523f305"><div class="fl-col fl-node-5d8b98523f306" data-node="5d8b98523f306"><div class="fl-col-content fl-node-content"></div></div><div class="fl-col fl-node-5d8b98523f309 fl-col-small" data-node="5d8b98523f309"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-icon fl-node-5d8b98523f307" data-node="5d8b98523f307"><div class="fl-module-content fl-node-content"><div class="fl-icon-wrap"><span class="fl-icon"><i class="fas fa-chevron-circle-right" aria-hidden="true"></i></span><div id="fl-icon-text-5d8b98523f307" class="fl-icon-text fl-icon-text-wrap"><p><span class="uppercase">Learning Communities 11th Annual Kickoff</span></p></div></div></div></div><div class="fl-module fl-module-custom-text fl-node-5d8b98523f308" data-node="5d8b98523f308"><div class="fl-module-content fl-node-content"><div id='uc-custom-text-container-5d8b98523f308' class='uc-custom-text'>  <p id="custom_text-5d8b98523f308-0" class="custom-text">  UConn’s Learning Communities have garnered national attention for their unique approach to supporting students. As part of our 30 Learning Communities, 19 of which are residential, students can select to live and learn in major- or interest-based communities. </p></div></div></div></div></div></div></div></div></div><div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5d8b98523f320" data-node="5d8b98523f320"><div class="fl-row-content-wrap"><div class="fl-row-content fl-row-fixed-width fl-node-content"><div class="fl-col-group fl-node-5d8b98523f321" data-node="5d8b98523f321"><div class="fl-col fl-node-5d8b98523f322 fl-col-has-cols" data-node="5d8b98523f322"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-heading fl-node-5d8b98523f31f" data-node="5d8b98523f31f"><div class="fl-module-content fl-node-content"><h1 class="fl-heading"><span class="fl-heading-text">Important Links</span></h1></div></div><div class="fl-col-group fl-node-5d8b98523f323 fl-col-group-nested" data-node="5d8b98523f323"><div class="fl-col fl-node-5d8b98523f324 fl-col-small" data-node="5d8b98523f324"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-5d8b98523f327 uppercase uconn-button" data-node="5d8b98523f327"><div class="fl-module-content fl-node-content"><div class="fl-button-wrap fl-button-width-full fl-button-left"><a href="https://uconn.edu" target="_self" class="fl-button" role="button"><span class="fl-button-text">University of Connecticut</span></a></div></div></div></div></div><div class="fl-col fl-node-5d8b98523f325 fl-col-small" data-node="5d8b98523f325"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-5d8b98523f329 uppercase uconn-button" data-node="5d8b98523f329"><div class="fl-module-content fl-node-content"><div class="fl-button-wrap fl-button-width-full fl-button-left"><a href="https://president.uconn.edu/" target="_self" class="fl-button" role="button"><span class="fl-button-text">Office of the President</span></a></div></div></div></div></div><div class="fl-col fl-node-5d8b98523f326 fl-col-small" data-node="5d8b98523f326"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-button fl-node-5d8b98523f328 uppercase uconn-button" data-node="5d8b98523f328"><div class="fl-module-content fl-node-content"><div class="fl-button-wrap fl-button-width-full fl-button-left"><a href="https://boardoftrustees.uconn.edu/" target="_self" class="fl-button" role="button"><span class="fl-button-text">Board of Trustees</span></a></div></div></div></div></div></div></div></div></div></div></div></div><div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5d8b98523f32a" data-node="5d8b98523f32a"><div class="fl-row-content-wrap"><div class="fl-row-content fl-row-fixed-width fl-node-content"><div class="fl-col-group fl-node-5d8b98523f32b" data-node="5d8b98523f32b"><div class="fl-col fl-node-5d8b98523f32c" data-node="5d8b98523f32c"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-html fl-node-5d8b98523f32d" data-node="5d8b98523f32d"><div class="fl-module-content fl-node-content"><div class="fl-html"></div></div></div></div></div></div></div></div></div><div class="fl-row fl-row-full-width fl-row-bg-none fl-node-5d8b98523f32e" data-node="5d8b98523f32e"><div class="fl-row-content-wrap"><div class="fl-row-content fl-row-fixed-width fl-node-content"><div class="fl-col-group fl-node-5d8b98523f32f" data-node="5d8b98523f32f"><div class="fl-col fl-node-5d8b98523f330" data-node="5d8b98523f330"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-icon-group fl-node-5d8b98523f331" data-node="5d8b98523f331"><div class="fl-module-content fl-node-content"><div class="fl-icon-group fl-icon-group-center"><span class="fl-icon"><a href="https://www.facebook.com/UConn/" target="_blank" aria-label="link to https://www.facebook.com/UConn/" rel="noopener" ><i class="uconn-icon-46-facebook" aria-hidden="true"></i></a></span><span class="fl-icon"><a href="https://twitter.com/UConn" target="_blank" aria-label="link to https://twitter.com/UConn" rel="noopener" ><i class="uconn-icon-43-twitter" aria-hidden="true"></i></a></span><span class="fl-icon"><a href="https://www.youtube.com/uconn" target="_blank" aria-label="link to https://www.youtube.com/uconn" rel="noopener" ><i class="uconn-icon-58-youtube" aria-hidden="true"></i></a></span><span class="fl-icon"><a href="https://www.instagram.com/uconn" target="_blank" aria-label="link to https://www.instagram.com/uconn" rel="noopener" ><i class="uconn-icon-78-instagram" aria-hidden="true"></i></a></span><span class="fl-icon"><a href="https://www.linkedin.com/school/university-of-connecticut/" target="_blank" aria-label="link to https://www.linkedin.com/school/university-of-connecticut/" rel="noopener" ><i class="uconn-icon-78-linkedin" aria-hidden="true"></i></a></span><span class="fl-icon"><a href="https://twitter.com/uconn/status/920295842006949890" target="_blank" aria-label="link to https://twitter.com/uconn/status/920295842006949890" rel="noopener" ><i class="uconn-icon-78-snapchat" aria-hidden="true"></i></a></span></div></div></div><div class="fl-module fl-module-rich-text fl-node-5d8b98523f336 footer-text text-center" data-node="5d8b98523f336"><div class="fl-module-content fl-node-content"><div class="fl-rich-text"><p><strong class="font-size-16">University of Connecticut</strong><br />Storrs, Connecticut 06269<br /><a href="https://uconn.edu/">uconn.edu</a></p></div></div></div></div></div></div></div></div></div><div class="fl-row fl-row-full-width fl-row-bg-none fl-node-5d8b98523f332" data-node="5d8b98523f332"><div class="fl-row-content-wrap"><div class="fl-row-content fl-row-fixed-width fl-node-content"><div class="fl-col-group fl-node-5d8b98523f333" data-node="5d8b98523f333"><div class="fl-col fl-node-5d8b98523f334" data-node="5d8b98523f334"><div class="fl-col-content fl-node-content"><div class="fl-module fl-module-menu fl-node-5d8b98523f335 links-underlined" data-node="5d8b98523f335"><div class="fl-module-content fl-node-content"><div class="fl-menu"><div class="fl-clear"></div><nav aria-label="Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement"><div class="menu fl-menu-horizontal fl-toggle-none"><ul><li id="menu-item-17" class=""><a></a></li><li id="menu-item-8" class=""><a></a></li><li id="menu-item-5" class=""><a></a></li><li id="menu-item-50" class=""><a></a></li><li id="menu-item-2" class=""><a></a></li></ul></div></nav></div></div></div></div></div></div></div></div></div></div></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-0cb3af380b928d16aabf.js"],"app":["/app-b7aba8d35c1ba479a70e.js"],"component---node-modules-ajberkow-gatsby-theme-ucomm-src-components-layout-js":["/component---node-modules-ajberkow-gatsby-theme-ucomm-src-components-layout-js-294d8b2a0bdddfca1446.js"]};/*]]>*/</script><script src="/ucomm-gatsby-theme-demo/polyfill-0cb3af380b928d16aabf.js" nomodule=""></script><script src="/ucomm-gatsby-theme-demo/component---node-modules-ajberkow-gatsby-theme-ucomm-src-components-layout-js-294d8b2a0bdddfca1446.js" async=""></script><script src="/ucomm-gatsby-theme-demo/app-b7aba8d35c1ba479a70e.js" async=""></script><script src="/ucomm-gatsby-theme-demo/styles-53aa9d4f42ead6242a9b.js" async=""></script><script src="/ucomm-gatsby-theme-demo/framework-c5c887c038a86482cf43.js" async=""></script><script src="/ucomm-gatsby-theme-demo/webpack-runtime-1fe388d268fa1d30aedf.js" async=""></script></body></html>
