@@ -25,6 +25,12 @@ module.exports = {
             ) {
               slug
               title
+              enqueuedStylesheets {
+                nodes {
+                  src
+                  handle
+                }
+              }
               beaverBuilderContent (
                 useGlobalCSS: true
               ) {
